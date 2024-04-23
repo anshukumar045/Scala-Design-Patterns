@@ -1,6 +1,6 @@
 package com.anshu.scaladesignpattern.abstractfactorydesign
 
-import com.anshu.scaladesignpattern.mainforall.{CommandLineParser, MainForall}
+import com.anshu.scaladesignpattern.mainforall.{CommandLineParser, MainForall, MainForall1}
 
 /*
  building a UI library that supports multiple themes.
@@ -8,7 +8,7 @@ import com.anshu.scaladesignpattern.mainforall.{CommandLineParser, MainForall}
   - Light Theme and Dark Theme.
  */
 
-class AbstractFactoryDesign extends MainForall{
+class AbstractFactoryDesign extends MainForall1{
   import AbstractFactoryDesign._
   override def run(appRags: CommandLineParser.ApplicationArguments): Unit = {
     println("executing abstract factory design")

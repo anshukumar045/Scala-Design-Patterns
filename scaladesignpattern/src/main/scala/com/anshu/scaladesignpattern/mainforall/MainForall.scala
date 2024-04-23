@@ -1,6 +1,6 @@
 package com.anshu.scaladesignpattern.mainforall
 
-trait MainForall {
+trait MainForall1 {
   import CommandLineParser._
 
   def run(appRags: ApplicationArguments): Unit
