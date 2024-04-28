@@ -3,9 +3,7 @@ package com.anshu.scaladesignpattern.mainandconfig.configtrait
 import com.anshu.scaladesignpattern.mainandconfig.carapp.CarConfig
 import com.anshu.scaladesignpattern.mainandconfig.truckapp.TruckConfig
 
-trait AppArg {
-  val appName: String = ""
-}
+abstract class AppArg (val appName: String)
 
 object AppArg{
 

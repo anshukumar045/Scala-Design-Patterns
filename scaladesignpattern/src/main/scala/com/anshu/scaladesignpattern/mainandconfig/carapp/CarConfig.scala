@@ -3,7 +3,7 @@ package com.anshu.scaladesignpattern.mainandconfig.carapp
 import com.anshu.scaladesignpattern.mainandconfig.configtrait.AppArg
 import scopt._
 
-case class CarConfig(override val appName: String = "", cost: Int = 0) extends AppArg
+case class CarConfig(override val appName: String = "", cost: Int = 0) extends AppArg(appName)
 
 object CarConfig{
   val carConfig = "CarConfig"

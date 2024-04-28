@@ -12,7 +12,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="sbt: com.amazonaws:aws-java-sdk-bundle:1.11.1026:jar" level="project" />
     <orderEntry type="library" name="sbt: com.chuusai:shapeless_2.12:2.3.10:jar" level="project" />
     <orderEntry type="library" name="sbt: com.clearspring.analytics:stream:2.9.6:jar" level="project" />
     <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
@@ -132,7 +131,6 @@
     <orderEntry type="library" name="sbt: org.apache.curator:curator-framework:2.13.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.curator:curator-recipes:2.13.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.derby:derby:10.14.2.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.apache.hadoop:hadoop-aws:3.3.1:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.hadoop:hadoop-client-api:3.3.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.hadoop:hadoop-client-runtime:3.3.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.apache.hive.shims:hive-shims-0.23:2.3.9:jar" level="project" />
@@ -247,7 +245,6 @@
     <orderEntry type="library" name="sbt: org.typelevel:spire-platform_2.12:0.17.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.typelevel:spire-util_2.12:0.17.0:jar" level="project" />
     <orderEntry type="library" name="sbt: org.typelevel:spire_2.12:0.17.0:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.wildfly.openssl:wildfly-openssl:1.0.7.Final:jar" level="project" />
     <orderEntry type="library" name="sbt: org.xerial.snappy:snappy-java:1.1.8.4:jar" level="project" />
     <orderEntry type="library" name="sbt: oro:oro:2.0.8:jar" level="project" />
     <orderEntry type="library" name="sbt: pl.edu.icm:JLargeArrays:1.5:jar" level="project" />
