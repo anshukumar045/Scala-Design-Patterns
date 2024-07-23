@@ -5,6 +5,7 @@ import org.apache.spark.sql.SparkSession
 
 trait UniversalMailWithConfig {
 
+
   def runWithSpark[T <: AppArg](config: T):(SparkSession => Unit)
 
 }

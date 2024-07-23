@@ -25,7 +25,10 @@ object MainApp extends App{
         .enableHiveSupport()
         .getOrCreate()
 
+      spark.sparkContext.setLogLevel("ERROR")
+
       appInstance.runWithSpark(options)(spark)
+      spark.stop()
 
     case _ => println("invalid apps")
   }
