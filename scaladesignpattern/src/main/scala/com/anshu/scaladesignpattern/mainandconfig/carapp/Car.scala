@@ -22,14 +22,14 @@ class Car extends UniversalMailWithConfig {
 
 //    df.filter(col("cost") > lit(carConfig.cost)).show(10, false)
 
-    println(discountCost(carConfig.cost)(100))
+//    println(discountCost(carConfig.cost)(100))
     implicit val discountX: Int = 100
     implicit val discount: Double = 120.00
 
     val disc = 100
 
-    println(discountCost(carConfig.cost)(disc))
-    println(discountCost(carConfig.cost))
+//    println(discountCost(carConfig.cost)(disc))
+//    println(discountCost(carConfig.cost))
 
   }
 
