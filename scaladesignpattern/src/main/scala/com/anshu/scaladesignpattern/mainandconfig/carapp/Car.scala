@@ -37,6 +37,8 @@ class Car extends UniversalMailWithConfig {
   private def discountCost(cost: Int)(implicit discount: Int): Int = cost-discount
 
   // TODO: Implicit Methods or Conversions
+
+
   // TODO: Implicit Objects
   // TODO: Implicit Classes
 
