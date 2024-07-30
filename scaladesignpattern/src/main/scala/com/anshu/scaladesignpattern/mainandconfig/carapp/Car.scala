@@ -2,6 +2,7 @@ package com.anshu.scaladesignpattern.mainandconfig.carapp
 
 import com.anshu.scaladesignpattern.mainandconfig.configtrait.AppArg
 import com.anshu.scaladesignpattern.mainandconfig.universalmaintrait.UniversalMailWithConfig
+import com.anshu.scaladesignpattern.mainandconfig.utils.Person
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
 
@@ -31,6 +32,17 @@ class Car extends UniversalMailWithConfig {
 //    println(discountCost(carConfig.cost)(disc))
 //    println(discountCost(carConfig.cost))
 
+    // TODO: Implicit Objects
+    /**
+     * Person(name. age)
+     * List(Person).sorted
+     * List(3,2,1).sorted
+     */
+
+    val list = List(Person("A", 2), Person("B", 1), Person("C", 3))
+    val sortedList = list.sorted
+    println(sortedList)
+
   }
 
   // TODO: Implicit parameter
@@ -38,8 +50,13 @@ class Car extends UniversalMailWithConfig {
 
   // TODO: Implicit Methods or Conversions
 
-
   // TODO: Implicit Objects
+  /**
+   * Person(name. age)
+   * List(Person).sorted
+   * List(3,2,1).sorted
+   */
+
   // TODO: Implicit Classes
 
 }
