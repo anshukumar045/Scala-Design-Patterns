@@ -6,6 +6,7 @@ import com.anshu.scaladesignpattern.mainandconfig.utils.FieldChecker._
 import com.anshu.scaladesignpattern.mainandconfig.utils.Person
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
+import com.anshu.scaladesignpattern.mainandconfig.utils.AllMyImplicits._
 
 class Car extends UniversalMailWithConfig {
 
@@ -23,6 +24,10 @@ class Car extends UniversalMailWithConfig {
       (3, "car3", 3000),
       (4, "car4", 4000),
     ).toDF("id","model","cost")
+
+
+    df.filterLessThanCost(carConfig.cost).show(10, false)
+
 
 //    df.filter(col("cost") > lit(carConfig.cost)).show(10, false)
 
@@ -52,8 +57,8 @@ class Car extends UniversalMailWithConfig {
     val selectedEmployees = listOfEmployees.flatMap(filterPlayers(_))
     val selectedStudents = listOfStudents.flatMap(filterPlayers(_))
 
-    println(selectedEmployees)
-    println(selectedStudents)
+//    println(selectedEmployees)
+//    println(selectedStudents)
   }
 
   // TODO: Implicit parameter
