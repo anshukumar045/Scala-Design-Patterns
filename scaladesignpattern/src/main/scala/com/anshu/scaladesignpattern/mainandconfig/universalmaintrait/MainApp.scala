@@ -3,13 +3,15 @@ package com.anshu.scaladesignpattern.mainandconfig.universalmaintrait
 import com.anshu.scaladesignpattern.mainandconfig.carapp.Car
 import com.anshu.scaladesignpattern.mainandconfig.configtrait.AppArg
 import com.anshu.scaladesignpattern.mainandconfig.truckapp.Truck
+import com.anshu.scaladesignpattern.mainandconfig.typeclasses.TypeClassApp
 import org.apache.spark.sql.SparkSession
 
 object MainApp extends App{
 
   val appMaps = Map(
     "cars" -> classOf[Car],
-    "trucks" -> classOf[Truck]
+    "trucks" -> classOf[Truck],
+    "typeclasses" -> classOf[TypeClassApp]
   )
 
   val parsedArgs: Option[AppArg] = AppArg.parsingArgs(args)
